@@ -1,5 +1,7 @@
 
 
+## [1.6.2](https://github.com/iurev/whisper-obsidian-plugin/compare/1.6.1...1.6.2) (2024-04-10)
+
 ## [1.6.1](https://github.com/iurev/whisper-obsidian-plugin/compare/1.6.0...1.6.1) (2024-04-10)
 
 ## 1.6.0 (2024-04-10)

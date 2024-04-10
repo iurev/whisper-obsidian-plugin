@@ -98,12 +98,18 @@ export class AudioHandler {
 					)?.editor;
 				if (editor) {
 					const cursorPosition = editor.getCursor();
-					editor.replaceRange(response.data.text, cursorPosition);
+					let text = null;
+					if (this.plugin.settings.saveAudioFile) {
+						text = `![[${audioFilePath}]]\n${response.data.text}`;
+					} else {
+						text = response.data.text;
+					}
+					editor.replaceRange(text, cursorPosition);
 
 					// Move the cursor to the end of the inserted text
 					const newPosition = {
 						line: cursorPosition.line,
-						ch: cursorPosition.ch + response.data.text.length,
+						ch: cursorPosition.ch + text.length,
 					};
 					editor.setCursor(newPosition);
 				}

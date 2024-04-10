@@ -1,0 +1,13 @@
+{
+	"git": {
+		"commitMessage": "chore: release v${version}"
+	},
+	"github": {
+		"release": true,
+		"assets": [
+			"main.js",
+			"manifest.json",
+			"styles.css"
+		]
+	}
+}

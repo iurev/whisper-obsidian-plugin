@@ -3,7 +3,7 @@
 		"commitMessage": "chore: release v${version}"
 	},
 	"github": {
-		"release": true,
+		"release": true
 		"assets": [
 			"main.js",
 			"manifest.json",

@@ -54,7 +54,7 @@
 				"manifest.json",
 				"styles.css"
 			]
-		}
+		},
 		"plugins": {
 			"@release-it/conventional-changelog": {
 				"infile": "CHANGELOG.md",
